@@ -1,0 +1,10 @@
+<div class="flex flex-row flex-wrap">
+    <!-- <p *ngIf = "prenom === 'erwann'">{{prenom}}</p> -->
+    <div class ="divPlayer p-8" *ngFor="let player of players">
+        <img src="../../assets/img/{{player.image}}" id = "imgPlayer">
+        <h5>{{player.prenom}} {{player.nom}}</h5>
+        <p>{{player.age}} ans</p>
+        <p>{{player.desc}}</p>
+        <a routerLink="/player/{{player.id}}">Detail</a>
+    </div>
+</div>

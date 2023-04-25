@@ -1,0 +1,9 @@
+<div class="flex flex-row flex-wrap">
+    <div class ="divPlayer p-8" *ngFor="let stand of stands">
+        <img src="../../assets/img/{{stand.image}}" id = "imgPlayer">
+        <h5>{{stand.nom}}</h5>
+        <p>{{stand.pouvoir}} ans</p>
+        <p>{{stand.detenteur}}</p>
+        <a routerLink="/player/{{stand.id}}">Detail</a>
+    </div>
+</div>
